@@ -6,14 +6,66 @@
     <title>contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<nav>
-    <ul class="mainNav">
-        <li><a href="#index">Home</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a>No Brainer Rewards</a></li>
-        <li><a class="active" href="#contact">Contact</a></li>
-    </ul>
-</nav>
+
+<body>
+        <main id="main-container">
+        <section id="section1">
+            <nav>
+                <ul class="mainNav">
+                    <li><a href="#index">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a>No Brainer Rewards</a></li>
+                    <li><a class="active" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+<hr class="section-hr">
+
+<form action="#">
+   <label for="FirstName">First Name</label>
+        <input type="text" name="FirstName" id="FirstName" required><br>
+   <label for="LastName">Last Name</label>
+        <input type="text" name="LastName" id="LastName" required><br>
+    <label for="ContactNumber">Contact Number</label>
+        <input type="tel" name="ContactNumber" id="ContactNumber" required><br>
+   <label for="Email">Email</label>
+        <input type="email" name="Email" id="Email" required><br>
+   <label for="VisitDate">Date of Visit</label>
+        <input type="date" name="VisitDate" id="VisitDate" required><br>
+   <label for="ContactReason">Select Contact Reason</label>
+        <select name="ContactReason">
+            <option value="blank" selected> </option>
+            <option value="orderIssue">Order Issue</option>
+            <option value="staffIssue">Staff Issue</option>
+            <option value="locationIssue">Location Issue</option>
+            <option value="complement">Complements</option>
+            <option value="suggestions">Suggestions</option>
+            <option value="other">Other</option>
+    </select>
+<fieldset>
+   <label for="FollowUp">Check to be contacted</label>
+        <input type="checkbox" name="FollowUp" id="FollowUp"><br>
+</fieldset>
+   <fieldset>
+       <label for="PreferedContact">Prefered Contact Method</label>
+        <input type="radio" name="PreferedContact" id="PreferedContact"><br>
+        <legend>Radio Buttons</legend>
+       <label for="PrefPhone">Phone</label>
+       <input type="radio" name="radio" id="PrefPhone">
+       <label for="PrefEmail">Email</label>
+       <input type="radio" name="radio" id="PrefEmail">
+   </fieldset>
+   <label for="FeedBack">Feedbackl</label>
+        <input type="text" name="FeedBack" id="FeedBack" required><br>
+
+    <label for="CustName">Customer's Name</label>
+        <input type="text" name="CustName" id="CustName" required><br>
+   
+    <input type="reset">   
+     <input type="submit">
+    </form>
+
+
 
 
 <body>
