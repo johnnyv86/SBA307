@@ -8,130 +8,155 @@
 </head>
 
 <body>
-        <main id="main-container">
+    <main id="main-container">
         <section id="section1">
             <nav>
                 <ul class="mainNav">
-                    <li><a href="#index">Home</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a class="active" href="#rewards">No Brainer Rewards</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a class="active" href="rewards.html">No Brainer Rewards</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
 
 <hr class="section-hr">
 
-<h2>Become a No Brainer!</h2>
+	<h2>Become a No Brainer!</h2>
+		<p>Join our rewards club to earn points on every sip!</p>
+		
+		<fieldset>
+			<legend>Personal Information</legend>
+				<div class="form-group">
+				   <label for="FirstName">First Name</label>
+				        <input type="text" name="FirstName" id="FirstName" required><br>
+				</div>
+				
+				<div class="form-group">
+				    <label for="LastName">Last Name</label>
+				        <input type="text" name="LastName" id="LastName" required><br>
+				</div>
+								
+				<div class="form-group">
+				    <label for="ContactNumber">Contact Number</label>
+				        <input type="tel" name="ContactNumber" id="ContactNumber" required><br>
+				</div>
+								
+				<div class="form-group">
+				    <label for="Email">Email</label>
+				        <input type="email" name="Email" id="Email" required><br>
+		        </div>
 
-<form action="#">
-   <label for="FirstName">First Name</label>
-        <input type="text" name="FirstName" id="FirstName" required><br>
-    <label for="LastName">Last Name</label>
-        <input type="text" name="LastName" id="LastName" required><br>
-    <label for="ContactNumber">Contact Number</label>
-        <input type="tel" name="ContactNumber" id="ContactNumber" required><br>
-    <label for="Email">Email</label>
-        <input type="email" name="Email" id="Email" required><br>
-    <label for="StAddress">Street Address</label>
-        <input type="text" name="StAddress" id="StAddress" required><br>
-    <label for="City">City</label>
-        <input type="text" name="City" id="City" required><br>
-    <label for="StatePro">State/Province</label>
-        <input type="text" name="StatePro" id="StatePro" required><br>
-    <label for="ZipCode">Zip Code</label>
-        <input type="number" name="ZipCode" id="ZipCode" required><br>
-    <label for="Country">Country</label>
-        <input type="text" name="Country" id="Country" required><br>
+				<div class="form-group">
+				    <label for="Birthday">Birthday</label>
+				        <input type="date" name="Birthday" id="Birthday" required><br>
+				</div>
+		</fieldset>		
+
+		<fieldset>	
+				<div class="form-group">
+				    <label for="StAddress">Street Address</label>
+				        <input type="text" name="StAddress" id="StAddress" required><br>
+		        </div>
+        
+				<div class="form-group">
+				    <label for="City">City</label>
+				        <input type="text" name="City" id="City" required><br>
+				</div>
+			
+				<div class="form-group">
+				    <label for="StatePro">State/Province</label>
+				        <input type="text" name="StatePro" id="StatePro" required><br>
+				</div>
+				
+				<div class="form-group">
+				    <label for="ZipCode">Zip Code</label>
+				        <input type="number" name="ZipCode" id="ZipCode" required><br>
+				</div>
+				
+				<div class="form-group">
+				    <label for="Country">Country</label>
+				        <input type="text" name="Country" id="Country" required><br>
+				</div>
+		</fieldset>		
+
+		<fieldset>		
+			<legend>Tea Preferences</legend>
+			
+				<div class="form-group">
+					<label for="FavDrink">Favorite Drink Type:</label><br>
+				        <input type="select" name="FavDrink" id="FavDrink" required>
+					        <option value="">--Please choose an option--</option>
+				            <option value="MilkTea">Milk Tea</option>
+				            <option value="Matcha">Matcha</option>
+				            <option value="Punch">Punch</option>
+				            <option value="Slush">Slush</option>
+				            <option value="Yogurt">Yogurt</option>   
+				            <option value="Expresso">Expresso</option>         
+				            <option value="ClassicTea">Classic Tea</option>
+				</div>
+ 
+        
+				<div class="form-group">
+					<label for="sweetness">Prefered Sweetness Level</label>
+					    <input type="radio" name="sweetness" id="PrefSwtLvl"><br>
+					        <p>Preferred Sweetness Level:</p>
+					            <label for="sweet25">25%</label>
+					                <input type="radio" name="sweetness" id="sweet25" value="25">
+					            <label for="_50%">50%</label>
+					                <input type="radio" name="sweetness" id="_50%">
+					            <label for="_75%">75%</label>
+					                <input type="radio" name="sweetness" id="sweet75%" value="75">
+					            <label for="_100%">100%</label>
+					                <input type="radio" name="sweetness" id="_100%">
+				</div>	                
 
 
+				<div class="form-group">
+					<label for="FavTop">Favorite Toppings (Check all that applies):</label>
+					    <input type="checkbox" name="FavTop" id="FavTop"><br>
+					        <p>Check all that applies::</p>
+					            <label for="boba">Tapioca Boba</label>
+					                <input type="checkbox" name="topping" id="top_boba" value="boba">
+					            <label for="boba">Pudding</label>
+					                <input type="checkbox" name="topping" id="top_pudding" value="pudding">									            <label for="boba">Jelly</label>
+									<input type="checkbox" name="topping" id="top_jelly">	     
+								<label for="boba">Bean</label>
+					                <input type="checkbox" name="topping" id="top_bean" value="bean">    
+				</div>
+		   </fieldset>
+		   
+		   <fieldset>
+			   <legend>Account Setup</legend>
+			   <div class="form group">
+				   <label for="DeUsername">Desired Username:</label>
+				        <input type="text" name="DeUsername" id="DeUsername" required>
+				</div>
 
-    <label for="Birthday">Birthday</label>
-        <input type="date" name="Birthday" id="Birthday" required><br>
+			   <div class="form group">
+				   <label for="DePassword">Desired Password:</label>
+				        <input type="password" name="DePassword" id="DePassword" required>
+				</div>
+			</fieldset>
 
-   <label for="FavDrink">Favorite Drink</label>
-        <input type="text" name="FavDrink" id="FavDrink" required><br>
-   
-<label for="PrefSwtLvl">Prefered Sweetness Level</label>
-    <input type="radio" name="PrefSwtLvl" id="PrefSwtLvl"><br>
-        <legend>Radio Buttons</legend>
-            <label for="_25%">25%</label>
-                <input type="radio" name="_25%" id="_25%">
-            <label for="_50%">50%</label>
-                <input type="radio" name="_50%" id="_50%">
-            <label for="_75%">75%</label>
-                <input type="radio" name="_75%" id="_75%">
-            <label for="_100%">100%</label>
-                <input type="radio" name="_100%" id="_100%">
-
-   <fieldset>
-<label for="FavTop">Favorite Toppings</label>
-    <input type="checkbox" name="FavTop" id="FavTop"><br>
        <legend>Checkboxes</legend>
-            <label for="checkbox">Checkbox1</label>
-                <input type="checkbox" name="checkbox" id="checkbox">
-            <label for="checkbox2">Checkbox2</label>
-                <input type="checkbox" name="checkbox2" id="checkbox2">
-            <label for="checkbox3">Checkbox3</label>
-                <input type="checkbox" name="checkbox3" id="checkbox3">
-            <label for="checkbox">Checkbox1</label>
-                <input type="checkbox" name="checkbox" id="checkbox">
-            <label for="checkbox2">Checkbox2</label>
-                <input type="checkbox" name="checkbox2" id="checkbox2">
-            <label for="checkbox3">Checkbox3</label>
-                <input type="checkbox" name="checkbox3" id="checkbox3">
-            <label for="checkbox">Checkbox1</label>
-                <input type="checkbox" name="checkbox" id="checkbox">
-            <label for="checkbox2">Checkbox2</label>
-                <input type="checkbox" name="checkbox2" id="checkbox2">
-            <label for="checkbox3">Checkbox3</label>
-                <input type="checkbox" name="checkbox3" id="checkbox3">
-            <label for="checkbox">Checkbox1</label>
-                <input type="checkbox" name="checkbox" id="checkbox">
-            <label for="checkbox2">Checkbox2</label>
-                <input type="checkbox" name="checkbox2" id="checkbox2">
-            <label for="checkbox3">Checkbox3</label>
-                <input type="checkbox" name="checkbox3" id="checkbox3">
-            <label for="checkbox">Checkbox1</label>
-                <input type="checkbox" name="checkbox" id="checkbox">
-            <label for="checkbox2">Checkbox2</label>
-                <input type="checkbox" name="checkbox2" id="checkbox2">
-            <label for="checkbox3">Checkbox3</label>
-                <input type="checkbox" name="checkbox3" id="checkbox3">
-            <label for="checkbox">Checkbox1</label>
-                <input type="checkbox" name="checkbox" id="checkbox">
-            <label for="checkbox2">Checkbox2</label>
-                <input type="checkbox" name="checkbox2" id="checkbox2">
-            <label for="checkbox3">Checkbox3</label>
-                <input type="checkbox" name="checkbox3" id="checkbox3">
-            <label for="checkbox">Checkbox1</label>
-                <input type="checkbox" name="checkbox" id="checkbox">
-            <label for="checkbox2">Checkbox2</label>
-                <input type="checkbox" name="checkbox2" id="checkbox2">
-            <label for="checkbox3">Checkbox3</label>
-                <input type="checkbox" name="checkbox3" id="checkbox3">
-            <label for="checkbox">Checkbox1</label>
-                <input type="checkbox" name="checkbox" id="checkbox">
-            <label for="checkbox2">Checkbox2</label>
-                <input type="checkbox" name="checkbox2" id="checkbox2">
-            <label for="checkbox3">Checkbox3</label>
-                <input type="checkbox" name="checkbox3" id="checkbox3">
-   </fieldset><br>
-
-   <label for="CrtUserName">Create a UserName</label>
-        <input type="text" name="CrtUserName" id="CrtUserName" required><br>
-   <label for="CrtPassword">Create a Password</label>
-        <input type="password" name="CrtPassword" id="CrtPassword" required><br>
-
-    <input type="reset">   
-    <input type="submit">
-
-
-</form>
-
-
-
+			   <div class="form group">
+					<label for="TermAgre">I Agree to the Terms & Agreements</label>
+					    <input type="checkbox" name="TermAgre" id="TermAgre"><br>
+		
+		            <label for="PromoEmail">I Agree to recieve promotional emails</label>
+		                <input type="checkbox" name="PromoEmail" id="PromoEmail">
+		        </div>
+		        
+		        <div class="form-group">
+				    <input type="reset" value="Clear Form">   
+				    <input type="submit" class="SubmitBtn" value="Join Club">
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
+</form
 
 <body>
     
-</body>
 </html>

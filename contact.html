@@ -12,63 +12,100 @@
         <section id="section1">
             <nav>
                 <ul class="mainNav">
-                    <li><a href="#index">Home</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a>No Brainer Rewards</a></li>
-                    <li><a class="active" href="#contact">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="rewards.html">No Brainer Rewards</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
 
 <hr class="section-hr">
 
+<div class="GetUpdates">
+            
+            <h2 class="AnimatedHeader">Want Promo Notifications?</h3>
+                <form action="#">
+                    <label for="PromoEmail">Enter your email address:</label>
+	                    <input type="email" id="PromoEmail" name="email" required>
+                    
+
+
+                    <label for="FavTea">Favorite Tea Type:</label>
+	                    <select id="FavTea" name="fav_tea">
+	                        <option value="matcha">Matcha</option>
+	                        <option value="black">Black Tea</option>
+	                        <option value="herbal">Herbal</option>
+	                        <option value="bubble">Bubble Tea</option>
+	                    </select>
+
+                    <button type="submit">Notify Me!</button>
+                </form>
+            </div>
+
+<hr class="section-hr">
+
+	<div class="ContactContainer">
+		<h2 class="AnimatedHeader">We Want to Hear From You! 💬</h2>
+		
 <form action="#">
-   <label for="FirstName">First Name</label>
-        <input type="text" name="FirstName" id="FirstName" required><br>
-   <label for="LastName">Last Name</label>
-        <input type="text" name="LastName" id="LastName" required><br>
-    <label for="ContactNumber">Contact Number</label>
-        <input type="tel" name="ContactNumber" id="ContactNumber" required><br>
-   <label for="Email">Email</label>
-        <input type="email" name="Email" id="Email" required><br>
-   <label for="VisitDate">Date of Visit</label>
-        <input type="date" name="VisitDate" id="VisitDate" required><br>
-   <label for="ContactReason">Select Contact Reason</label>
-        <select name="ContactReason">
-            <option value="blank" selected> </option>
-            <option value="orderIssue">Order Issue</option>
-            <option value="staffIssue">Staff Issue</option>
-            <option value="locationIssue">Location Issue</option>
-            <option value="complement">Complements</option>
-            <option value="suggestions">Suggestions</option>
-            <option value="other">Other</option>
-    </select>
-<fieldset>
-   <label for="FollowUp">Check to be contacted</label>
-        <input type="checkbox" name="FollowUp" id="FollowUp"><br>
-</fieldset>
-   <fieldset>
-       <label for="PreferedContact">Prefered Contact Method</label>
-        <input type="radio" name="PreferedContact" id="PreferedContact"><br>
-        <legend>Radio Buttons</legend>
-       <label for="PrefPhone">Phone</label>
-       <input type="radio" name="radio" id="PrefPhone">
-       <label for="PrefEmail">Email</label>
-       <input type="radio" name="radio" id="PrefEmail">
-   </fieldset>
-   <label for="FeedBack">Feedbackl</label>
-        <input type="text" name="FeedBack" id="FeedBack" required><br>
+	<fieldset>
+		<legend>Your Details</legend>
+		   <label for="FirstName">First Name:</label>
+		        <input type="text" name="FirstName" id="FirstName" required><br>
+		        
+		   <label for="LastName">Last Name</label>
+		        <input type="text" name="LastName" id="LastName" required><br>
+		        
+		    <label for="ContactNumber">Contact Number:</label>
+		        <input type="tel" name="ContactNumber" id="ContactNumber" required><br>
+		        
+			   <label for="Email">Email</label>
+			        <input type="email" name="Email" id="Email" required><br>
+	</fieldset>
+	
+	<fieldset>
+		<legend>Visit Information</legend>
+		   <label for="VisitDate">Date of Visit</label>
+		        <input type="date" name="VisitDate" id="VisitDate" required><br>
+        
+		   <label for="ContactReason">Reason for Contact:</label>
+		        <select name="ContactReason" id="ContactReason">
+					<option value="blank" disabled selected>-- Select an option --</option>
+		            <option value="blank" selected> </option>
+		            <option value="orderIssue">Order Issue</option>
+		            <option value="staffIssue">Staff Issue</option>
+		            <option value="locationIssue">Location Issue</option>
+		            <option value="complement">Complements</option>
+		            <option value="suggestions">Suggestions</option>
+		            <option value="other">Other</option>
+			    </select>
+	</fieldset>
 
-    <label for="CustName">Customer's Name</label>
-        <input type="text" name="CustName" id="CustName" required><br>
+	<fieldset>
+		<legend>Follow up Preferences</legend>
+		   <label for="FollowUp">Please contact me about this issue</label>
+		        <input type="checkbox" name="FollowUp" id="FollowUp"><br>
+		        
+		<p>Preferred Contact Method:</p>
+			<label for="PrefPhone">Phone</label>
+		       <input type="radio" name="ContactMethod" id="PrefPhone" value="phone">
+
+	       <label for="PrefEmail">Email</label>
+		       <input type="radio" name="ContactMethod" id="PrefEmail">
+       
+            <label for="PreferedContact">Prefered Contact</label>
+		        <input type="radio" name="PreferedContact" id="PreferedContact"><br>
+	   </fieldset>
+	   
+		   <label for="FeedBack">Feedback:</label>
+		        <input type="textarea" name="FeedBack" id="FeedBack" placeholder="Type your message here..." required><br>
    
-    <input type="reset">   
-     <input type="submit">
+		    <input type="reset" value="Clear">   
+		    <input type="submit" value="Send Message">
+</div>
     </form>
-
-
-
-
-<body>
+</section>
+</main>
     
 </body>
 </html>
