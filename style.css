@@ -229,7 +229,14 @@ li a:hover:not(.active) {
     color: #ccc;
 }
 
-.size-table th, .size-table td {
+.size-table th {
+    border: 1px solid #ddd;
+	    padding: 8px;
+        text-align: left;
+        text-emphasis: strong;
+}
+
+.size-table td {
     border: 1px solid #ddd;
 	    padding: 8px;
         text-align: left;
@@ -292,6 +299,9 @@ li a:hover:not(.active) {
     background-color: #4CAF50; /* Default Green */
 }
 
+.topImage {
+
+}
 
 /* --- REWARDS & CONTACT --- */
 .form-group {
