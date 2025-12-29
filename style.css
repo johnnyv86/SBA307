@@ -71,7 +71,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-	background-color: #04AA6D;
+	background-color: #8FB38F;
 } 
 
 .separator, .section-hr {
@@ -207,7 +207,7 @@ li a:hover:not(.active) {
 .teaDes h3 {
     display: flex;
     justify-content: space-between;
-    color: #4CAF50;
+    color: #8FB38F;
 /* -- ADDED -- */
     font-size: 1.1em;
     margin-bottom: 5px;
@@ -325,7 +325,7 @@ li a:hover:not(.active) {
  */
 /* -- ADDED -- */
     font-size: 0.8rem;
-    background-color: #4CAF50; /* Default Green */
+    background-color: #8FB38F; /* Default Green */
 }
 
 .topImage {
@@ -396,7 +396,7 @@ textarea {
 }
 
 .SubmitBtn, /* -- ADDED -- */ button {
-    background-color: #4CAF50;
+    background-color: #8FB38F;
     color: white;
     padding: 12px 20px;
     border: none;
