@@ -401,10 +401,11 @@ textarea {
 }
     
 .GetUpdates {
-    background-color: #f4f4f4;
     padding: 20px;
-    text-align: center;
+    text-align: left;
 /* -- ADDED -- */
-    color: #333; /* Dark text for light background box */
+    color: white; /* Dark text for light background box */
     border-radius: 5px;
+    border-color: white;
 }
+

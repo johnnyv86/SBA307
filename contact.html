@@ -8,35 +8,57 @@
 </head>
 
 <body>
-        <main id="main-container">
+    <main id="main-container">
         <section id="section1">
-            <nav>
-                <ul class="mainNav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="rewards.html">No Brainer Rewards</a></li>
-                    <li><a class="active" href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+
+            <div class="box-b0-BusinessLogo"></div>
+                <img 
+                    src="BusinessLogo.png"
+                    alt="Per Scholas Tea Business Logo" 
+                    class="business-img" 
+                    style="border: 3px solid white;">
+                
+            <div class="header-text"> 
+                <h1 class="BusinessName">PER SCHOLAS TEA</h1> 
+                <p class="BusinessSlogan">Brewing the Future</p>
+        </section>
 
 <hr class="section-hr">
 
+            <nav>
+                <ul class="mainNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="rewards.html">No Brainer Rewards</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+	</section>
+
+<hr class="section-hr">
+
+
 <div class="GetUpdates">
             
-            <h2 class="AnimatedHeader">Want Promo Notifications?</h3>
+            <h2 class="AnimatedHeader">Want Promo Notifications?</h3><br>
                 <form action="#">
                     <label for="PromoEmail">Enter your email address:</label>
-	                    <input type="email" id="PromoEmail" name="email" required>
-                    
-
+	                    <input type="email" id="PromoEmail" name="email" required><br>
+                
 
                     <label for="FavTea">Favorite Tea Type:</label>
 	                    <select id="FavTea" name="fav_tea">
+	                        <option value="--Please choose an option--">-- Please choose an option --</option>							
 	                        <option value="matcha">Matcha</option>
 	                        <option value="black">Black Tea</option>
 	                        <option value="herbal">Herbal</option>
 	                        <option value="bubble">Bubble Tea</option>
 	                    </select>
+
+			   <div class="form group">
+		            <input type="checkbox" name="PromoEmail" id="PromoEmail">
+                        <label for="PromoEmail">I Agree to recieve promotional emails</label>    
+		        </div>						
 
                     <button type="submit">Notify Me!</button>
                 </form>
@@ -51,16 +73,16 @@
 	<fieldset>
 		<legend>Your Details</legend>
 		   <label for="FirstName">First Name:</label>
-		        <input type="text" name="FirstName" id="FirstName" required><br>
+		        <input type="text" name="FirstName" id="FirstName" placeholder="John" required><br>
 		        
 		   <label for="LastName">Last Name</label>
-		        <input type="text" name="LastName" id="LastName" required><br>
+		        <input type="text" name="LastName" id="LastName" placeholder="Doe" required><br>
 		        
 		    <label for="ContactNumber">Contact Number:</label>
-		        <input type="tel" name="ContactNumber" id="ContactNumber" required><br>
+		        <input type="tel" name="ContactNumber" id="ContactNumber" placeholder="(###) ###-####"  required><br>
 		        
 			   <label for="Email">Email</label>
-			        <input type="email" name="Email" id="Email" required><br>
+			        <input type="email" name="Email" id="Email" placeholder="johndoe@outlook.com" required><br>
 	</fieldset>
 	
 	<fieldset>
@@ -68,10 +90,10 @@
 		   <label for="VisitDate">Date of Visit</label>
 		        <input type="date" name="VisitDate" id="VisitDate" required><br>
         
+				
 		   <label for="ContactReason">Reason for Contact:</label>
 		        <select name="ContactReason" id="ContactReason">
-					<option value="blank" disabled selected>-- Select an option --</option>
-		            <option value="blank" selected> </option>
+					<option value="-- Select an option --">-- Select an option --</option>
 		            <option value="orderIssue">Order Issue</option>
 		            <option value="staffIssue">Staff Issue</option>
 		            <option value="locationIssue">Location Issue</option>
@@ -87,21 +109,25 @@
 		        <input type="checkbox" name="FollowUp" id="FollowUp"><br>
 		        
 		<p>Preferred Contact Method:</p>
-			<label for="PrefPhone">Phone</label>
-		       <input type="radio" name="ContactMethod" id="PrefPhone" value="phone">
 
-	       <label for="PrefEmail">Email</label>
-		       <input type="radio" name="ContactMethod" id="PrefEmail">
-       
-            <label for="PreferedContact">Prefered Contact</label>
-		        <input type="radio" name="PreferedContact" id="PreferedContact"><br>
+		    <input type="radio" name="ContactMethod" id="PrefPhone" value="phone">
+				<label for="PrefPhone">Phone</label>
+	       
+		    <input type="radio" name="ContactMethod" id="PrefEmail">
+				<label for="PrefEmail">Email</label>
+
 	   </fieldset>
-	   
-		   <label for="FeedBack">Feedback:</label>
-		        <input type="textarea" name="FeedBack" id="FeedBack" placeholder="Type your message here..." required><br>
-   
+
+	   <fieldset>
+		<legend>Feedback</legend>
+		        <textarea name="FeedBack" id="FeedBack" placeholder="Type your message here..." required></textarea>
+
+   			</fieldset>
+
+
 		    <input type="reset" value="Clear">   
 		    <input type="submit" value="Send Message">
+
 </div>
     </form>
 </section>

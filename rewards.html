@@ -98,10 +98,12 @@
 				</div>
 		</fieldset>		
 
+
+    
 		<fieldset>		
 			<legend>Tea Preferences</legend>
-				<div class="form-group">
-				        <input type="select" name="FavDrink" id="FavDrink" required>
+		   <label for="TeaPreferences">Tea Preferences:</label>
+		        <select name="TeaPreferences" id="TeaPreferences" required>
 					        <option value="--Please choose an option--">--Please choose an option--</option>
 				            <option value="MilkTea">Milk Tea</option>
 				            <option value="Matcha">Matcha</option>
@@ -110,22 +112,24 @@
 				            <option value="Yogurt">Yogurt</option>   
 				            <option value="Expresso">Expresso</option>         
 				            <option value="ClassicTea">Classic Tea</option>
-				</div>
+                </select>
  </fieldset>
  
     <fieldset>
         <legend>Sweetness Level Preference</legend>
 				<div class="form-group">
 					        <p>Select Your Preferred Sweetness Level:</p><br>
-					            <label for="sweet25">25%</label>
-					                <input type="radio" name="sweetness" id="sweet25" value="25">
-					            <label for="_50%">50%</label>
-					                <input type="radio" name="sweetness" id="sweet50%">
-					            <label for="_75%">75%</label>
-					                <input type="radio" name="sweetness" id="sweet75%" value="75">
-					            <label for="_100%">100%</label>
-					                <input type="radio" name="sweetness" id="sweet100%">
-				</div>	                
+
+					            <input type="radio" name="sweetness" id="sweet25" value="25">
+					                <label for="sweet25">25%</label>
+					            <input type="radio" name="sweetness" id="sweet50%">
+					                <label for="_50%">50%</label>					     
+                                <input type="radio" name="sweetness" id="sweet75%" value="75">
+					                <label for="_75%">75%</label>
+
+					            <input type="radio" name="sweetness" id="sweet100%">
+					                <label for="_100%">100%</label>
+                            </div>	                
 </fieldset>
 
 <fieldset>
