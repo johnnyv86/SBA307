@@ -8,12 +8,12 @@
 </head>
 
 <body>
-    <main id="main-container">
+        <main id="main-container">
         <section id="section1">
 
-            <div class="box-b0-BusinessLogo"></div>
+            <div class="box b0-business">
                 <img 
-                    src="BusinessLogo.png"
+                    src="BusinessLogo.png" 
                     alt="Per Scholas Tea Business Logo" 
                     class="business-img" 
                     style="border: 3px solid white;">
@@ -21,21 +21,19 @@
             <div class="header-text"> 
                 <h1 class="BusinessName">PER SCHOLAS TEA</h1> 
                 <p class="BusinessSlogan">Brewing the Future</p>
+
+                <nav>
+                    <ul class="mainNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="rewards.html">No Brainer Rewards</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
+                 </ul>
+            </nav>
+            </div>
+        </div>
         </section>
 
-<hr class="section-hr">
-
-            <nav>
-                <ul class="mainNav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="rewards.html">No Brainer Rewards</a></li>
-                <li><a class="active" href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-	</section>
-
-<hr class="section-hr">
 
 
 <div class="GetUpdates">
@@ -89,8 +87,17 @@
 		<legend>Visit Information</legend>
 		   <label for="VisitDate">Date of Visit</label>
 		        <input type="date" name="VisitDate" id="VisitDate" required><br>
-        
-				
+    
+<hr class="section-hr">
+		   <label for="AproxTime">Aprox. Time</label><br>
+		        <input type="time" name="AproxTime" id="AproxTime" required><br>
+	</fieldset>
+
+
+
+
+
+	   <fieldset>
 		   <label for="ContactReason">Reason for Contact:</label>
 		        <select name="ContactReason" id="ContactReason">
 					<option value="-- Select an option --">-- Select an option --</option>
@@ -101,32 +108,35 @@
 		            <option value="suggestions">Suggestions</option>
 		            <option value="other">Other</option>
 			    </select>
-	</fieldset>
+
+<hr class="section-hr">
+
+		<legend>Feedback</legend>
+		        <textarea name="FeedBack" id="FeedBack" placeholder="Type your message here..." required></textarea>
+   			</fieldset>
 
 	<fieldset>
 		<legend>Follow up Preferences</legend>
-		   <label for="FollowUp">Please contact me about this issue</label>
-		        <input type="checkbox" name="FollowUp" id="FollowUp"><br>
-		        
-		<p>Preferred Contact Method:</p>
+		        <input type="checkbox" name="FollowUp" id="FollowUp">
+					<label for="FollowUp">Please contact me about this issue</label>
+		       
+<hr class="section-hr">
 
+
+		<p>Preferred Contact Method: 
 		    <input type="radio" name="ContactMethod" id="PrefPhone" value="phone">
 				<label for="PrefPhone">Phone</label>
 	       
 		    <input type="radio" name="ContactMethod" id="PrefEmail">
 				<label for="PrefEmail">Email</label>
-
+</p>
 	   </fieldset>
-
-	   <fieldset>
-		<legend>Feedback</legend>
-		        <textarea name="FeedBack" id="FeedBack" placeholder="Type your message here..." required></textarea>
-
-   			</fieldset>
+		        <div class="form-group">
+				    <input type="reset" class="ClearBtn" value="Clear Form">
+				    <input type="submit" class="SubmitBtn" value="Join Club">
+				</div>
 
 
-		    <input type="reset" value="Clear">   
-		    <input type="submit" value="Send Message">
 
 </div>
     </form>
