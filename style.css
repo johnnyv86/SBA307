@@ -232,6 +232,24 @@ li a:hover:not(.active) {
     */
 }
 
+.topType h3 {
+    display: flex;
+    justify-content: space-between;
+    color: #8FB38F;
+/* -- ADDED -- */
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    text-align: center;
+/* -- REMOVED -- 
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    */
+
+
+}
+
+
 .section-title {
     font-size: 1.4em;
     color: white;
@@ -345,6 +363,12 @@ li a:hover:not(.active) {
     margin-bottom: 20;
 }
 
+.topImageV2 {
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover;
+    margin-bottom: 20;
+}
 /* --- REWARDS & CONTACT --- */
 .form-group {
     margin-bottom: 15px;
