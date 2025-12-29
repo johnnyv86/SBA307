@@ -233,20 +233,17 @@ li a:hover:not(.active) {
 }
 
 .topType h3 {
-    display: flex;
-    justify-content: space-between;
-    color: #8FB38F;
+
+    color: #8FB38Fre;
 /* -- ADDED -- */
     font-size: 1.1em;
     margin-bottom: 5px;
-    text-align: center;
+    text-align: left;
 /* -- REMOVED -- 
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 10px;
     */
-
-
 }
 
 
