@@ -20,6 +20,7 @@ body {
 	font: 1.2em sans-serif;
 	overflow: hidden;
 	background-color: #333;
+    border:1px solid #8FB38F ;
 }
 
 .box {
@@ -51,7 +52,7 @@ body {
 
 .BusinessSlogan {
     color: lightblue;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 li {
@@ -246,6 +247,17 @@ li a:hover:not(.active) {
     */
 }
 
+.topCol {
+    column-count: 2;
+    column-gap: 50px;
+    list-style-position: inside;
+    padding: 0;
+    list-style: disc;
+    display: grid;
+    grid-template-columns: 125px 1fr; 
+    padding-left: 25px; 
+    margin-bottom: 3px;
+}
 
 .section-title {
     font-size: 1.4em;
