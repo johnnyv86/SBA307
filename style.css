@@ -366,8 +366,8 @@ li a:hover:not(.active) {
 }
 
 .topImage {
-    width: 40px; 
-    height: 40px; 
+    width: 100px; 
+    height: 100px; 
     object-fit: cover;
     margin-bottom: 20;
 }
