@@ -42,7 +42,7 @@
 
 	<h2>Become a No Brainer!</h2>
 		<p>Join our rewards club to earn points on every sip!</p><br>
-		
+		<form action="#">
 		<fieldset>
 			<legend>Personal Information</legend>
 				<div class="form-group">
@@ -120,12 +120,12 @@
 					        <p>Select Your Preferred Sweetness Level:</p><br>
 					            <input type="radio" name="sweetness" id="sweet25" value="25">
 					                <label for="sweet25">25%</label>
-					            <input type="radio" name="sweetness" id="sweet50%">
-					                <label for="_50%">50%</label>					     
-                                <input type="radio" name="sweetness" id="sweet75%" value="75">
-					                <label for="_75%">75%</label>
-					            <input type="radio" name="sweetness" id="sweet100%">
-					                <label for="_100%">100%</label>
+					            <input type="radio" name="sweetness" id="sweet50">
+					                <label for="sweet50">50%</label>					     
+                                <input type="radio" name="sweetness" id="sweet75" value="75">
+					                <label for="sweet75">75%</label>
+					            <input type="radio" name="sweetness" id="sweet100">
+					                <label for="sweet100">100%</label>
                             </div>	                
 </fieldset>
 
@@ -134,24 +134,24 @@
 				<div class="form-group">
 					        <p>Select all that applies:</p><br>
 					            <input type="checkbox" name="topping" id="top_boba" value="boba">
-                                    <label for="boba">Tapioca Boba</label>
-					            <input type="checkbox" name="topping" id="top_pudding" value="pudding">									            <label for="boba">Jelly</label>
-					                <label for="boba">Pudding</label>
+                                    <label for="top_boba">Tapioca Boba</label>
+					            <input type="checkbox" name="topping" id="top_pudding" value="pudding">									            
+					                <label for="top_pudding">Pudding</label>
                                 <input type="checkbox" name="topping" id="top_jelly">	     
-                                    <label for="boba">Jelly</label>
+                                    <label for="top_jelly">Jelly</label>
                                <input type="checkbox" name="topping" id="top_bean" value="bean">    
-									<label for="boba">Bean</label>
+									<label for="top_bean">Bean</label>
                 </div>
 		   </fieldset>
 		   
 		   <fieldset>
 			   <legend>Account Setup</legend>
-			   <div class="form group">
+			   <div class="form-group">
 				   <label for="DeUsername">Desired Username:</label>
 				        <input type="text" name="DeUsername" id="DeUsername" required>
 				</div>
 
-			   <div class="form group">
+			   <div class="form-group">
 				   <label for="DePassword">Desired Password:</label>
 				        <input type="password" name="DePassword" id="DePassword" required>
 				</div>
@@ -159,7 +159,7 @@
 
     <hr class="section-hr">
 
-			   <div class="form group">
+			   <div class="form-group">
 					<input type="checkbox" name="TermAgre" id="TermAgre">
 					    <label for="TermAgre">I Agree to the Terms & Agreements</label><br>
 		            <input type="checkbox" name="PromoEmail" id="PromoEmail">
@@ -170,13 +170,10 @@
 				    <input type="reset" class="ClearBtn" value="Clear Form">
 				    <input type="submit" class="SubmitBtn" value="Join Club">
 				</div>
-
+            </form>
 			</section>
 		</main>
 	</body>
-</html>
-</form
 
-<body>
-    
 </html>
+

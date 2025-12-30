@@ -426,6 +426,26 @@ textarea {
     */
 }
 
+
+
+.radio-group {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.radio-group input[type="radio"] {
+    margin: 0; 
+    margin-right: 5px; 
+    cursor: pointer;
+}
+
+.radio-group label {
+    cursor: pointer; 
+    margin-right: 15px; 
+}
+
+
 .ClearBtn, /* -- ADDED -- */ button {
     background-color: white;
     color: black;
