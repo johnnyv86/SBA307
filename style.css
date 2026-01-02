@@ -235,13 +235,28 @@ li a:hover:not(.active) {
 
 /* -- ADDED -- */
 .teaDes {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 15px;
+    align-items: start;
     background-color: #333;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
 }/* -- ADDED -- */
 
-.teaDes h3 {
+.drinkImage{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.teaDes h3 .drinkDes1{
+    grid-column: 2;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     color: #8FB38F;
