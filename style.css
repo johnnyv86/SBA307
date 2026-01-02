@@ -53,12 +53,12 @@ body {
     flex-direction: row;
     align-items: center;
     text-align: left;
-    gap: 35px;
+    gap: 10px;
 }
 
 .business-img {
-    width: 150px; 
-    height: 150px; 
+    width: 200px; 
+    height: 200px; 
     object-fit: cover;
     margin-bottom: 20;
 }
@@ -71,6 +71,19 @@ body {
 .BusinessSlogan {
     color: lightblue;
     font-size: 2em;
+}
+
+.businessInfo-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: left;
+    width: 100%;
+    gap: 30px;               
+}
+
+
+.businessInfo {
+    text-align: center;
 }
 
 li {
