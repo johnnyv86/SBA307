@@ -253,6 +253,15 @@ li a:hover:not(.active) {
     grid-column: 1;
     grid-row: 1 / span 2;
 }
+.teaDes h3 {
+    grid-column: 2;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    color: #8FB38F;
+/* -- ADDED -- */
+    font-size: 1.1em;
+}
 
 .teaDes h3 .drinkDes1{
     grid-column: 2;
@@ -321,7 +330,7 @@ li a:hover:not(.active) {
 }
 
 .MenuTitle {
-    font-size: 1.4em;
+    font-size: 2.0em;
     color: white;
     border-bottom: 2px solid #555;
     padding-bottom: 15px;
@@ -443,6 +452,7 @@ fieldset {
 }
 
 legend {
+    font-size: 1.5em;
 	font-weight: bold;
     color: #fff;        /* -- REMOVED --  eee*/ 
 /* -- ADDED -- */
@@ -586,8 +596,4 @@ textarea {
     color: white; /* Dark text for light background box */
     border-radius: 5px;
     border-color: white;
-}
-
-.MenuTitle h2 {
-
 }
