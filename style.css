@@ -316,14 +316,14 @@ li a:hover:not(.active) {
 .size-table th {
     border: 1px solid #ddd;
 	    padding: 8px;
-        text-align: left;
+        text-align: center;
         text-emphasis: strong;
 }
 
 .size-table td {
     border: 1px solid #ddd;
 	    padding: 8px;
-        text-align: left;
+        text-align: center;
 }
 
 .size-table th {
@@ -414,6 +414,21 @@ legend {
     color: #fff;        /* -- REMOVED --  eee*/ 
 /* -- ADDED -- */
     padding: 0 5px;
+}
+
+.topCol2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 columns */
+    gap: 15px;               
+    list-style: none;            
+    padding: 0;
+    margin: 0;
+}
+
+.topCol2 li {
+    color: #ccc; 
+    padding: 5px 0; 
+    border-bottom: 1px solid #444; 
 }
 
 /* -- ADDED -- */
