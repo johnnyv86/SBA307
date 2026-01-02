@@ -513,9 +513,11 @@ textarea {
     cursor: default;
     color: #4CAF50;
 }
-
+.GetUpdates {
+    max-width: 100%;
+    margin: 0 auto; /* Centers the form */
 .ContactContainer {
-    max-width: 600px;
+    max-width: 100%;
     margin: 0 auto; /* Centers the form */
 }
     

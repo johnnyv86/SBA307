@@ -35,16 +35,18 @@
         </div>
         </section>
 
-
+<hr class="section-hr">
 
 <div class="GetUpdates">
-            
+            <fieldset>
             <h2 class="AnimatedHeader">Want Promo Notifications?</h2><br>
                 <form action="#">
+						<div class="form-group">
                     <label for="PromoEmail">Enter your email address:</label>
 	                    <input type="email" id="PromoEmail" name="email" required><br>
-                
+				</div>
 
+					<div class="form-group">
                     <label for="FavTea">Favorite Tea Type:</label>
 	                    <select id="FavTea" name="fav_tea" required>
 	                        <option value="" disabled selected>-- Please choose an option --</option>							
@@ -52,7 +54,7 @@
 	                        <option value="black">Black Tea</option>
 	                        <option value="herbal">Herbal</option>
 	                        <option value="bubble">Bubble Tea</option>
-	                    </select>
+	                    </select></div>
 
 			   <div class="form-group">
 		            <input type="checkbox" name="PromoAgree" id="PromoAgree">
@@ -60,38 +62,46 @@
 		        </div>						
 
                     <button type="submit" class="SubmitBtn">Notify Me!</button>
-                </form>
+                </form></fieldset>
             </div>
+
 
 <hr class="section-hr">
 
 	<div class="ContactContainer">
-		<h2 class="AnimatedHeader">We Want to Hear From You! 💬</h2>
+		<h2 class="AnimatedHeader">We Want to Hear From You! 💬</h2><br>
 		
 <form action="#">
 	<fieldset>
 		<legend>Your Details</legend>
+		<div class="form-group">
 		   <label for="FirstName">First Name:</label>
-		        <input type="text" name="FirstName" id="FirstName" placeholder="John" required><br>
-		        
+		        <input type="text" name="FirstName" id="FirstName" placeholder="John" required></div>
+
+		<div class="form-group">
 		   <label for="LastName">Last Name</label>
-		        <input type="text" name="LastName" id="LastName" placeholder="Doe" required><br>
+		        <input type="text" name="LastName" id="LastName" placeholder="Doe" required></div>
 		        
+		<div class="form-group">
 		    <label for="ContactNumber">Contact Number:</label>
-		        <input type="tel" name="ContactNumber" id="ContactNumber" placeholder="(###) ###-####"  required><br>
-		        
+		        <input type="tel" name="ContactNumber" id="ContactNumber" placeholder="(###) ###-####"  required></div>
+
+		<div class="form-group">
 			   <label for="Email">Email</label>
-			        <input type="email" name="Email" id="Email" placeholder="johndoe@outlook.com" required><br>
+			        <input type="email" name="Email" id="Email" placeholder="johndoe@outlook.com" required></div>
 	</fieldset>
 	
 	<fieldset>
 		<legend>Visit Information</legend>
+		<div class="form-group">
 		   <label for="VisitDate">Date of Visit</label>
-		        <input type="date" name="VisitDate" id="VisitDate" required><br>
+		        <input type="date" name="VisitDate" id="VisitDate" required></div>
     
 <hr class="section-hr">
+
+		<div class="form-group">
 		   <label for="ApproxTime">Approx. Time</label><br>
-		        <input type="time" name="ApproxTime" id="ApproxTime" required><br>
+		        <input type="time" name="ApproxTime" id="ApproxTime" required></div>
 	</fieldset>
 
 
@@ -100,6 +110,7 @@
 
 	   <fieldset>
 		<legend>Reason & Feedback</legend>
+		<div class="form-group">
 		   <label for="ContactReason">Reason for Contact:</label>
 		        <select name="ContactReason" id="ContactReason" required>
 					<option value="" disabled selected>-- Select an option --</option>
@@ -109,19 +120,20 @@
 		            <option value="compliment">Compliments</option>
 		            <option value="suggestions">Suggestions</option>
 		            <option value="other">Other</option>
-			    </select>
+			    </select></div>
 
 <hr class="section-hr">
 
-
+		<div class="form-group">
 		<label for="FeedBack">Feedback:</label><br>
 		        <textarea name="FeedBack" id="FeedBack" placeholder="Type your message here..." required></textarea>
-   			</fieldset>
+   			</fieldset></div>
 
 	<fieldset>
 		<legend>Follow up Preferences</legend>
+		<div class="form-group">
 		        <input type="checkbox" name="FollowUp" id="FollowUp">
-					<label for="FollowUp">Please contact me about this issue</label>
+					<label for="FollowUp">Please contact me about this issue</label></div>
 		       
 <hr class="section-hr">
 
