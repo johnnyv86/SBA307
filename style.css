@@ -81,7 +81,12 @@ body {
     gap: 30px;               
 }
 
-
+.busIcon {
+    width: 20px; 
+    height: 20px; 
+    object-fit: cover;
+    margin-bottom: 20;
+}
 .businessInfo {
     text-align: center;
 }
