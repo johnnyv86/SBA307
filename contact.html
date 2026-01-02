@@ -27,7 +27,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
                     <li><a href="menuV2.html">Menu V2</a></li>
-                    <li><a href="rewards.html">No Brainer Rewards</a></li>
+                    <li><a href="rewards.html">Rewards</a></li>
                     <li><a class="active" href="contact.html">Contact</a></li>
                  </ul>
             </nav>
@@ -46,7 +46,7 @@
                 
 
                     <label for="FavTea">Favorite Tea Type:</label>
-	                    <select id="FavTea" name="fav_tea">
+	                    <select id="FavTea" name="fav_tea" required>
 	                        <option value="" disabled selected>-- Please choose an option --</option>							
 	                        <option value="matcha">Matcha</option>
 	                        <option value="black">Black Tea</option>
@@ -90,8 +90,8 @@
 		        <input type="date" name="VisitDate" id="VisitDate" required><br>
     
 <hr class="section-hr">
-		   <label for="AproxTime">Aprox. Time</label><br>
-		        <input type="time" name="AproxTime" id="AproxTime" required><br>
+		   <label for="ApproxTime">Approx. Time</label><br>
+		        <input type="time" name="ApproxTime" id="ApproxTime" required><br>
 	</fieldset>
 
 
@@ -101,7 +101,7 @@
 	   <fieldset>
 		<legend>Reason & Feedback</legend>
 		   <label for="ContactReason">Reason for Contact:</label>
-		        <select name="ContactReason" id="ContactReason">
+		        <select name="ContactReason" id="ContactReason" required>
 					<option value="" disabled selected>-- Select an option --</option>
 		            <option value="orderIssue">Order Issue</option>
 		            <option value="staffIssue">Staff Issue</option>
@@ -126,7 +126,7 @@
 <hr class="section-hr">
 
 
-		<p>Preferred Contact Method: 
+		<p class="radio-group">Preferred Contact Method: 
 		    <input type="radio" name="ContactMethod" id="PrefPhone" value="phone">
 				<label for="PrefPhone">Phone</label>
 	       
@@ -143,7 +143,6 @@
     </form>
 </div>
 
-</section>
 </main>
     
 </body>
