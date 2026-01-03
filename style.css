@@ -276,7 +276,7 @@ li a:hover:not(.active) {
     color: #8FB38F;
 /* -- ADDED -- */
     font-size: 1.1em;
-    margin-bottom: 5px;
+    margin-bottom: 0;
 /* -- REMOVED -- 
     align-items: flex-start;
     flex-wrap: wrap;
@@ -290,7 +290,7 @@ li a:hover:not(.active) {
     color: white;
 /* -- ADDED -- */
     font-size: 1.5em;
-    margin-bottom: 5px;
+    margin-bottom: 0;
 /* -- REMOVED -- 
     align-items: flex-start;
     flex-wrap: wrap;
@@ -316,6 +316,7 @@ li a:hover:not(.active) {
     grid-template-columns: 1fr 1fr; 
     gap: 10px; 
     list-style: none; 
+    padding: 0;
 }
 
 .topCol2 {
