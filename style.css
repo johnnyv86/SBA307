@@ -60,7 +60,8 @@ body {
     width: 200px; 
     height: 200px; 
     object-fit: cover;
-    margin-bottom: 20;
+    margin-bottom: 20px;
+    border: 3px solid white; 
 }
 
 .BusinessName {
@@ -85,7 +86,7 @@ body {
     width: 20px; 
     height: 20px; 
     object-fit: cover;
-    margin-bottom: 20;
+    margin-bottom: 20px;
 }
 .businessInfo {
     text-align: center;
@@ -116,6 +117,10 @@ li a:hover:not(.active) {
     height: 1px; 
     background-color: #444; 
     margin: 15px 0; 
+}
+
+.full-width-hr {
+    width: 100%;
 }
 
 #main-container {
@@ -294,11 +299,11 @@ li a:hover:not(.active) {
 }
 
 .topType h3 {
-    color: #8FB38Fre;
+    color: #8FB38F;
 /* -- ADDED -- */
     font-size: 1.1em;
     margin-bottom: 5px;
-    text-align: left;
+    text-align: center;
 /* -- REMOVED -- 
     align-items: flex-start;
     flex-wrap: wrap;
@@ -307,15 +312,26 @@ li a:hover:not(.active) {
 }
 
 .topCol {
-    column-count: 2;
-    column-gap: 50px;
-    list-style-position: inside;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; 
+    list-style: none; 
+}
+
+.topCol2 {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; 
+    list-style: none; 
     padding: 0;
-    list-style: disc;
-    display: grid;
-    grid-template-columns: 125px 1fr; 
-    padding-left: 25px; 
-    margin-bottom: 3px;
+}
+
+.topping-item {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    border: none;
 }
 
 .section-title {
@@ -441,7 +457,7 @@ li a:hover:not(.active) {
     width: 100px; 
     height: 100px; 
     object-fit: cover;
-    margin-bottom: 20;
+    margin-bottom: 20px;
 }
 /* --- REWARDS & CONTACT --- */
 .form-group {
@@ -530,6 +546,7 @@ input[type="tel"],
 input[type="date"], 
 input[type="password"], 
 input[type="number"],
+input[type="time"],
 select, 
 textarea {
     width: 100%;
@@ -584,7 +601,7 @@ textarea {
 }
 
 .ClearBtn:hover {
-    transform; scale(1.05)
+    transform: scale(1.05)
     background-color: #d32f2f; /* Darker red on hover */
     opacity: 0.9;
 }

@@ -15,8 +15,7 @@
                 <img 
                     src="BusinessLogo.png" 
                     alt="Per Scholas Tea Business Logo" 
-                    class="business-img" 
-                    style="border: 3px solid white;">
+                    class="business-img">
 <hr class="section-hr">
             <div class="header-text"> 
                 <h1 class="BusinessName">PER SCHOLAS TEA</h1> 
@@ -26,7 +25,7 @@
 
                 <div class="businessInfo-container">
                     <div class="businessInfo">
-                        <img class="busIcon" src="Clock.png" alt="Buisness Hour Icon">
+                        <img class="busIcon" src="Clock.png" alt="Business Hour Icon">
                 <h3>Business Hours</h3>
                 <p>Monday - Sunday<br>12pm - 12am</p></div>
 
@@ -38,7 +37,7 @@
                 </div>
                
             <div class="businessInfo">
-                <img class="busIcon" src="Location.jpg" alt="Address Icon">
+                <img class="busIcon" src="Location.jpeg" alt="Address Icon">
                 <h3>Address</h3>
                     <p>Brickell City Centre</p>
                     <p>701 S Miami Ave, Miami, FL 33130</p>
@@ -70,23 +69,23 @@
 
 <div class="rewardsOutline">
 
-	<div class="reward-box">
+	<div class="reward box">
 			<fieldset>
 				<legend>How To. . .</legend>
-				<img class="rewardsImage" src="Rewards-How.jpg" alt="How To Earn Points!">
+				<img class="rewardsImage" src="Rewards-How.jpeg" alt="How To Earn Points!">
 			</fieldset></div>
 
-	<div class="reward-box">
+	<div class="reward box">
 			<fieldset>
 				<legend>Reward Levels. . .</legend>
-				<img class="rewardsImage" src="Rewards-Level.jpg" alt="How To Earn Points!">
+				<img class="rewardsImage" src="Rewards-Level.jpeg" alt="How To Earn Points!">
 			</fieldset></div>
 
 			
-	<div class="reward-box">
+	<div class="reward box">
 		<fieldset>
 				<legend>Redeem For. . .</legend>
-				<img class="rewardsImage" src="Rewards-Redemption.jpg" alt="How To Earn Points!">
+				<img class="rewardsImage" src="Rewards-Redemption.jpeg" alt="How To Earn Points!">
 			</fieldset></div></div>
 		</section>
 
@@ -154,9 +153,9 @@
 			<legend>Tea Preferences</legend>
 		   <label for="TeaPreferences">Tea Preferences:</label>
 		        <select name="TeaPreferences" id="TeaPreferences" required>
-					        <option value="--Please choose an option--">--Please choose an option--</option>
+					        <option value="" disabled selected>--Please choose an option--</option>
 				            <option value="ClassicTea">Classic Tea</option>				          
-				            <option value="Expresso">Expresso</option>                             
+				            <option value="Espresso">Espresso</option>                             
 				            <option value="Matcha">Matcha</option>
                             <option value="MilkTea">Milk Tea</option>
 				            <option value="Punch">Punch</option>
@@ -169,13 +168,13 @@
         <legend>Sweetness Level Preference</legend>
 				<div class="form-group">
 					        <p>Select Your Preferred Sweetness Level:</p><br>
-					            <input type="radio" name="sweetness" id="sweet25" value="25">
+					            <input type="radio" name="sweetness" id="sweet25" value="25%">
 					                <label for="sweet25">25%</label>
-					            <input type="radio" name="sweetness" id="sweet50">
+					            <input type="radio" name="sweetness" id="sweet50" value="50%">
 					                <label for="sweet50">50%</label>					     
-                                <input type="radio" name="sweetness" id="sweet75" value="75">
+                                <input type="radio" name="sweetness" id="sweet75" value="75%">
 					                <label for="sweet75">75%</label>
-					            <input type="radio" name="sweetness" id="sweet100">
+					            <input type="radio" name="sweetness" id="sweet100" value="100%">
 					                <label for="sweet100">100%</label>
                             </div>	                
 </fieldset>
@@ -188,7 +187,7 @@
                                     <label for="top_boba">Tapioca Boba</label>
 					            <input type="checkbox" name="topping" id="top_pudding" value="pudding">									            
 					                <label for="top_pudding">Pudding</label>
-                                <input type="checkbox" name="topping" id="top_jelly">	     
+                                <input type="checkbox" name="topping" id="top_jelly" value="jelly">	     
                                     <label for="top_jelly">Jelly</label>
                                <input type="checkbox" name="topping" id="top_bean" value="bean">    
 									<label for="top_bean">Bean</label>
@@ -214,7 +213,7 @@
 					<input type="checkbox" name="TermAgre" id="TermAgre">
 					    <label for="TermAgre">I Agree to the Terms & Agreements</label><br>
 		            <input type="checkbox" name="PromoEmail" id="PromoEmail">
-                        <label for="PromoEmail">I Agree to recieve promotional emails</label>    
+                        <label for="PromoEmail">I Agree to receive promotional emails</label>    
 		        </div>
 		        
 		        <div class="form-group">
@@ -222,7 +221,6 @@
 				    <input type="submit" class="SubmitBtn" value="Join Club">
 				</div>
             </form>
-			</section>
 		</main>
 	</body>
 
