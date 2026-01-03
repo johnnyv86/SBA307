@@ -389,12 +389,18 @@ li a:hover:not(.active) {
     color: #eee;
 }
 
-
+.b5-sizes, .b6-sweetness, .b7-toppings {
+    flex: 1; /* Takes up 1/4 of the space (Sidebar) */
+    min-width: 250px;
+}/* -- ADDED -- */
 /* --- SWEETNESS BARS --- */
 .sweetLev-container {
-    margin-bottom: 15px;
+	width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+/* -- ADDED -- */
+    color: #ccc;
 }
-
 .sweetLev {
     display: block;
     margin-bottom: 5px;
@@ -429,7 +435,7 @@ li a:hover:not(.active) {
     width: 100px; 
     height: 100px; 
     object-fit: cover;
-    margin-bottom: 20;
+
 }
 
 .topImageV2 {
@@ -454,6 +460,7 @@ fieldset {
 legend {
     font-size: 1.5em;
 	font-weight: bold;
+    text-align: left;
     color: #fff;        /* -- REMOVED --  eee*/ 
 /* -- ADDED -- */
     padding: 0 5px;
