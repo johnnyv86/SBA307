@@ -643,13 +643,14 @@ textarea {
     margin: 0 auto; /* Centers the form */
 }
 
-    .ContactContainer {
+.ContactContainer {
+    padding:10px;
     max-width: 100%;
     margin: 0 auto; /* Centers the form */
 }
     
 .GetUpdates {
-    padding: 20px;
+    padding:10px;
     text-align: left;
 /* -- ADDED -- */
     color: white; /* Dark text for light background box */
