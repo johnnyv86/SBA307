@@ -252,8 +252,13 @@ body {
 /*=========================================
 		    DRINK ITEMS
 =========================================*/
-.menu-col, .content-col h2 {
-    padding: 10px;
+.menu-col h2, .content-col h2 { 
+    color: white;
+    border-bottom: 2px solid #555;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    font-weight: bold;
     text-align: center;
 }
         
@@ -295,7 +300,7 @@ body {
 /* -- ADDED -- */
     font-size: 1.1em;
     margin-bottom: 0;
-/* -- REMOVED -- 
+    text-align: left;/* -- REMOVED -- 
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 10px;
@@ -480,13 +485,33 @@ body {
 /*=========================================
 		REWARDS
 =========================================*/
-.rewards-info h3 {
+
+
+
+.rewards-info h1 { 
     margin: 0;
-    display: flex;
-    justify-content: space-between;
+    display: ;
+    justify-content: ;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    font-size:3em;
+    font-weight: bold;
     color: #8FB38F;
-/* -- ADDED -- */
-    font-size: 1.1em;
+    text-align: center;
+}
+
+.rewards-info h5 { 
+    margin: 0;
+    display: ;
+    justify-content: ;
+    padding-bottom: 5px;
+    padding-top: 0;
+    margin-bottom: 10px;
+    font-size:1.2em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
 }
 
 .rewardsOutline {
@@ -608,10 +633,18 @@ textarea {
     opacity: 0.9;
 }
 
+
 .SubmitBtn, /* -- ADDED -- */ button {
     background-color: #8FB38F;
     color: white;
-    
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+/* -- ADDED -- */
+	font-size: 1rem;
+	margin-top: 10px;
+}
 
 .SubmitBtn:hover, /* -- ADDED -- */ button:hover {
     transform: scale(1.05);
@@ -627,10 +660,24 @@ textarea {
     100% { transform: rotate(0deg); }
 }
 
+.GetUpdates h2, .ContactContainer h2 {
+    margin: 0;
+    display: ;
+    justify-content: ;
+    padding-bottom: 5px;
+    padding-top: 0;
+    margin-bottom: 10px;
+    font-size:1.75em;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+}
+
 .AnimatedHeader:hover {
     animation: wiggle 0.5s ease-in-out;
     cursor: default;
     color: #4CAF50;
+    
 }
 
 .GetUpdates, .ContactContainer {
