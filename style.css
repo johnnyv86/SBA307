@@ -11,6 +11,7 @@ body {
     padding: 15px;
 }
 
+
 .mainNav {
 	display: flex;
     width: 100%;
@@ -32,13 +33,17 @@ body {
     border-left: none;
 }
 
-.mainNav a {
+.mainNav li a {
     display: block;
     width: 100%;
     color: white;
     text-align: center; /* Ensures text is in the middle */
-    padding: 14px 0;
+    padding: 10px 15px;
     text-decoration: none;
+}
+
+.mainNav li a:hover:not(.active) {
+	background-color: #111;
 }
 
 .box {
@@ -90,22 +95,6 @@ body {
 }
 .businessInfo {
     text-align: center;
-}
-
-li {
-    border-left: 1px solid #bbb; 
-}
-
-li a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 10px 15px;
-	text-decoration: none;
-}
-
-li a:hover:not(.active) {
-	background-color: #111;
 }
 
 .active {
@@ -340,7 +329,8 @@ li a:hover:not(.active) {
     color: white;
     border-bottom: 2px solid #555;
     padding-bottom: 15px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     font-weight: bold;
     text-align: center;
 }
@@ -375,8 +365,8 @@ li a:hover:not(.active) {
     border: 1px solid #ddd;
 	    padding: 8px;
         text-align: center;
-        text-emphasis: strong;
-}
+        font-weight: bold;
+    }
 
 .size-table td {
     border: 1px solid #ddd;
@@ -569,9 +559,10 @@ textarea {
     */
 }
 
-
-
 .radio-group {
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
     display: flex;
     align-items: center; 
     gap: 10px; 
@@ -619,7 +610,7 @@ textarea {
 	margin-top: 10px;
 }
 
-.SubmitBtn:hover, /* -- ADDED -- */ button {
+.SubmitBtn:hover /* -- ADDED -- */ button {
     transform: scale(1.05);
 /* -- ADDED -- */
 	background-color: #45a049;

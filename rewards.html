@@ -8,11 +8,11 @@
 </head>
 
 <body>
-    <main id="main-container">
+    <div id="main-container">
         <header id="section1">
             <div class="box b0-business">
                 <img 
-                    src="BusinessLogo.png" 
+                    src="media/BusinessLogo.png" 
                     alt="Per Scholas Tea Business Logo" 
                     class="business-img">
 
@@ -28,7 +28,7 @@
 						<div class="businessInfo">
 							<img 
 								class="busIcon" 
-								src="Clock.png" 
+								src="media/Clock.png" 
 								alt="Business Hour Icon">
 							<h3>Business Hours</h3>
 							<p>Monday - Sunday<br>12pm - 12am</p>
@@ -37,7 +37,7 @@
 						<div class="businessInfo">
 							<img 
 								class="busIcon" 
-								src="Phone.svg" 
+								src="media/Phone.svg" 
 								alt="Phone Icon">
 							<h3>Phone Number</h3>
 							<p>(305) 515-9041</p>
@@ -47,7 +47,7 @@
             			<div class="businessInfo">
 							<img 
 								class="busIcon" 
-								src="Location.jpeg" 
+								src="media/Location.jpeg" 
 								alt="Address Icon">
 							<h3>Address</h3>
 							<p>Brickell City Centre</p>
@@ -72,6 +72,8 @@
 
 		<hr class="section-hr">
 
+		<main>
+
 		<section style="text-align: center;" class="rewards-info">
 			<h1>Become a No Brainer!</h1>
 			<p>Join our rewards club to earn points on every sip!</p>
@@ -83,7 +85,7 @@
 						<legend>How To. . .</legend>
 						<img 
 							class="rewardsImage" 
-							src="Rewards-How.jpeg" 
+							src="media/Rewards-How.jpeg" 
 							alt="How To Earn Points!">
 					</fieldset>
 				</div>
@@ -93,7 +95,7 @@
 						<legend>Reward Levels. . .</legend>
 						<img 
 							class="rewardsImage" 
-							src="Rewards-Level.jpeg" 
+							src="media/Rewards-Level.jpeg" 
 							alt="How To Earn Points!">
 					</fieldset>
 				</div>
@@ -103,7 +105,7 @@
 						<legend>Redeem For. . .</legend>
 						<img 
 							class="rewardsImage" 
-							src="Rewards-Redemption.jpeg" 
+							src="media/Rewards-Redemption.jpeg" 
 							alt="How To Earn Points!">
 					</fieldset>
 				</div>
@@ -185,8 +187,9 @@
     	<fieldset>
         	<legend>Sweetness Level Preference</legend>
 			<div class="form-group">
-				<p style="margin-bottom: 15px;">Select Your Preferred Sweetness Level:</p><br>
-				<div style="display: flex; justify-content: space-between; text-align: center; width: 100%;">
+				<p style="margin-bottom: 15px;">Select Your Preferred Sweetness Level:</p>
+				<div class="radio-group">
+	
 					<div style="flex: 1;">
 						<input type="radio" name="sweetness" id="sweet25" value="25%" style="margin-bottom: 5px;"><br>
 						<label for="sweet25">25%</label>
@@ -204,14 +207,14 @@
 						<label for="sweet100">100%</label>
 					</div>
 				</div>
-			</divt>
+			</div>
 		</fieldset>
 
 		<fieldset>
         	<legend>Favorite Toppings</legend>
 			<div class="form-group">
-				<p style="margin-bottom: 15px;">Select all that applies:</p><br>
-				<div style="display: flex; justify-content: space-between; text-align: center; width: 100%;">
+				<p style="margin-bottom: 15px;">Select all that applies:</p>
+				<div class="radio-group">
 					<div style="flex: 1;">
 						<input type="checkbox" name="topping" id="top_boba" value="boba" style="margin-bottom: 5px;"><br>
                     	<label for="top_boba">Tapioca Boba</label>
@@ -228,8 +231,8 @@
                 		<input type="checkbox" name="topping" id="top_bean" value="bean" style="margin-bottom: 5px;"><br>
 						<label for="top_bean">Bean</label>
 					</div>
-				</div>	
-			</div>
+				</div>
+			</div>	
 		</fieldset>
 		   
 		<fieldset>
@@ -260,6 +263,7 @@
 			</div>
 		</form>
 	</main>
+	</div>
 </body>
 </html>
 
