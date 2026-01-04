@@ -50,8 +50,8 @@ body {
 }
 
 .business-img {
-    width: 200px; 
-    height: 200px; 
+    width: 225px; 
+    height: 225px; 
     object-fit: cover;
     margin-bottom: 0;
     border: 3px solid white; 
