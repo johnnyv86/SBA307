@@ -559,7 +559,7 @@ body {
 .inline-checkboxes label {
     display: inline;
     margin-left: 10px;
-    margin-bottom: 0;
+    margin-bottom: 100px;
 }
 .inline-checkboxes input {
     width: auto;
