@@ -736,6 +736,8 @@ button {
     color: white;
     text-align: left;
 }
+
+
 .AnimatedHeader label {
     text-align: center;
 }
@@ -791,5 +793,6 @@ button {
     .form-row {
         flex-direction: column;
         gap: 0;
+        text-align: center;
     }
 }
