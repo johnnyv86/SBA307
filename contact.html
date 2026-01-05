@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Per Scholas Tea Index</title>
     <link rel="stylesheet" href="style.css">
+	<link rel="icon" href="media/BusinessLogo.png" type="image/png">
 </head>
 
 <body>
@@ -73,21 +74,19 @@
 			<fieldset>
 				<h2 class="AnimatedHeader" style="text-align: center;">Want Promo Notifications?</h2>
 				<form action="#">
-					<div class="form-group">
-						<label for="FullName">Full Name:</label>
-						<input 
-							type="text" 
-							name="FullName" 
-							id="FullName" 
-							placeholder="John Doe" 
-							required>
-					</div>
-
-					<div class="form-group">
-						<label for="PromoEmail">Enter your email address:</label>
-						<input type="email" id="PromoEmail" name="email" placeholder="johndoe@outlook.com" required>
-					</div>
-					
+				<div class="form-row">
+				<div class="form-group">
+					<label for="FirstName">First Name:</label>
+					<input type="text" name="FirstName" id="FirstName" placeholder="Jane" required><br>
+				</div>
+				
+				<div class="form-group">
+				    <label for="LastName">Last Name:</label>
+				    <input type="text" name="LastName" id="LastName" placeholder="Doe" required><br>
+				</div>
+				</div>
+				
+					<div class="form-row">
 					<div class="form-group">
 						<label for="FavTea">Favorite Tea Type:</label>
 						<select id="FavTea" name="fav_tea" required>
@@ -99,7 +98,14 @@
 	                    </select>
 					</div>
 
-			   		<div class="form-group">
+					<div class="form-group">
+						<label for="PromoEmail">Enter your email address:</label>
+						<input type="email" id="PromoEmail" name="email" placeholder="johndoe@outlook.com" required>
+					</div>
+					</div>
+				
+
+			   		<div class="form-group inline-checkboxes">
 						<input type="checkbox" name="PromoAgree" id="PromoAgree">
 						<label for="PromoAgree">I Agree to receive promotional emails</label>    
 		        	</div>
@@ -117,6 +123,7 @@
 			<form action="#">
 				<fieldset>
 					<legend>Your Details</legend>
+					<div class="form-row">
 					<div class="form-group">
 						<label for="FirstName">First Name:</label>
 						<input 
@@ -136,7 +143,9 @@
 							placeholder="Doe" 
 							required>
 					</div>
+					</div>
 		        
+					<div class="form-row">
 					<div class="form-group">
 						<label for="ContactNumber">Contact Number:</label>
 						<input 
@@ -156,10 +165,12 @@
 							placeholder="johndoe@outlook.com" 
 							required>
 					</div>
+					</div>
 				</fieldset>
 	
 				<fieldset>
 					<legend>Visit Information</legend>
+					<div class="form-row">
 					<div class="form-group">
 						<label for="VisitDate">Date of Visit:</label>
 						<input 
@@ -178,6 +189,7 @@
 							name="ApproxTime" 
 							id="ApproxTime" 
 							required>
+					</div>
 					</div>
 				</fieldset>
 				
@@ -218,7 +230,7 @@
 					<hr class="section-hr">
 					
 					<p style="margin-bottom: 10px;">Preferred Contact Method:</p>
-					<div class="radio-group1">
+					<div class="radio-group">
 						<div>
 						<input type="radio" name="ContactMethod" id="PrefPhone" value="phone">
 							<label for="PrefPhone">Phone</label>

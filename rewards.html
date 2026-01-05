@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Per Scholas Tea Index</title>
     <link rel="stylesheet" href="style.css">
+	<link rel="icon" href="media/BusinessLogo.png" type="image/png">
 </head>
 
 <body>
@@ -71,6 +72,7 @@
 		<hr class="section-hr">
 
 		<main>
+			<form action="#">
 
 		<section style="text-align: center;" class="rewards-info">
 			<h1>No Brainer Reward!</h1>
@@ -109,10 +111,12 @@
 				</div>
 			</div>
 		</section>
+		</form>
 		
 		<form action="#">
 			<fieldset>
 				<legend style="text-align: center;">Personal Information</legend>
+				<div class="form-row">
 				<div class="form-group">
 					<label for="FirstName">First Name:</label>
 					<input type="text" name="FirstName" id="FirstName" placeholder="Jane" required><br>
@@ -122,21 +126,25 @@
 				    <label for="LastName">Last Name:</label>
 				    <input type="text" name="LastName" id="LastName" placeholder="Doe" required><br>
 				</div>
-								
-				<div class="form-group">
-				    <label for="ContactNumber">Contact Number:</label>
-				    <input type="tel" name="ContactNumber" id="ContactNumber" placeholder="(###) ###-####" required><br>
 				</div>
-								
-				<div class="form-group">
-				    <label for="Email">Email:</label>
-				    <input type="email" name="Email" id="Email" placeholder="janedoe@outlook.com" required><br>
-		        </div>
 
+				<div class="form-row">
 				<div class="form-group">
 				    <label for="Birthday">Birthday:</label>
 				    <input type="date" name="Birthday" id="Birthday" required><br>
 				</div>
+
+				<div class="form-group">
+				    <label for="ContactNumber">Contact Number:</label>
+				    <input type="tel" name="ContactNumber" id="ContactNumber" placeholder="(###) ###-####" required><br>
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-group">
+				    <label for="Email">Email:</label>
+				    <input type="email" name="Email" id="Email" placeholder="janedoe@outlook.com" required><br>
+		        </div>
 		</fieldset>		
 
 		<fieldset>	
@@ -146,6 +154,7 @@
 			    <input type="text" name="StAddress" id="StAddress" placeholder="123 Main St." required><br>
 		    </div>
         
+			<div class="form-row">
 			<div class="form-group">
 				<label for="City">City:</label>
 			    <input type="text" name="City" id="City" placeholder="Miami" required><br>
@@ -155,7 +164,9 @@
 			    <label for="StatePro">State/Province:</label>
 		        <input type="text" name="StatePro" id="StatePro" placeholder="FL" required><br>
 			</div>
+			</div>
 				
+			<div class="form-row">
 			<div class="form-group">
 			    <label for="ZipCode">Zip Code:</label>
 			    <input type="number" name="ZipCode" id="ZipCode" placeholder="33136" required><br>
@@ -164,7 +175,8 @@
 			<div class="form-group">
 			    <label for="Country">Country:</label>
 			    <input type="text" name="Country" id="Country" placeholder="USA" required><br>
-			</div>		
+			</div>
+			</div>
 		</fieldset>		
     
 		<fieldset>
@@ -217,7 +229,7 @@
 				<label for="topping">Select all that applies.</label>
 				<div class="radio-group">
 					<div style="flex: 1;">
-						<input type="checkbox" name="topping" id="top_boba" value="boba" style="margin-bottom: 5px;"><br>
+						<input type="checkbox" name="topping" id="top_boba" value="boba" style="margin-bottom: 5px;">
                     	<label for="top_boba">Tapioca Boba</label>
 					</div>
 					<div style="flex: 1;">
@@ -243,6 +255,7 @@
 				    <input type="text" name="DeUsername" id="DeUsername" required>
 			</div>
 
+			<div class="form-row">
 			<div class="form-group">
 				<label for="DePassword">Choose Password:</label>
 				    <input type="password" name="DePassword" id="DePassword" required>
@@ -252,15 +265,17 @@
 				<label for="RePassword">Reenter Password:</label>
 			<input type="password" name="RePassword" id="RePassword" required>
 			</div>
+			</div>
 		</fieldset>
 
     	<hr class="section-hr">
 
-			<div class="form-group">
+			<div class="form-group inline-checkboxes">
+				<input type="checkbox" name="PromoEmail" id="PromoEmail">
+                    <label for="PromoEmail">Opt-In to receive promotional emails.</label><br> 
 				<input type="checkbox" name="TermAgre" id="TermAgre">
-					<label for="TermAgre">I Agree to the Terms & Agreements.</label><br>
-		        <input type="checkbox" name="PromoEmail" id="PromoEmail">
-                    <label for="PromoEmail">I Agree to receive promotional emails.</label>    
+					<label for="TermAgre">I Agree to the Terms & Agreements.</label>
+  
 		    </div>
 		        
 		    <div class="form-group">

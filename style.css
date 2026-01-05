@@ -90,6 +90,16 @@ body {
     text-align: center;
 }
 
+.businessInfo a {
+    color: #8FB38F;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.businessInfo a:hover {
+    text-decoration: underline;
+    color: white;
+}
 /*=========================================
 		    NAVIGATION
 =========================================*/
@@ -175,7 +185,6 @@ body {
 .b2-promo img {
     max-width: 275px;
     height: auto;
-    border: 2px solid #555;
 }/* -- ADDED -- */
 
 
@@ -430,7 +439,7 @@ body {
 		SIDEBAR - TOP
 =========================================*/
 .topType h3 {
-    color: #8FB38F;
+    color: white;
 /* -- ADDED -- */
     font-size: 1.1em;
     margin-bottom: 5px;
@@ -471,7 +480,6 @@ body {
     border: none;
 }
 
-
 .topImage, .topImageV2 {
     width: 100px; 
     height: 100px; 
@@ -480,17 +488,29 @@ body {
     margin-top: 10px;
 }
 
+.topping-item h4 {
+    color: #8FB38F;
+    font-size: 1em;
+    margin: 0;
+    font-weight: normal;
+}
 
 /*=========================================
 		REWARDS
 =========================================*/
+.form-row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
 
+.form-row .form-group {
+    flex: 1;
+}
 
 
 .rewards-info h1 { 
     margin: 0;
-    display: ;
-    justify-content: ;
     padding-bottom: 5px;
     padding-top: 5px;
     margin-bottom: 5px;
@@ -502,8 +522,6 @@ body {
 
 .rewards-info h5 { 
     margin: 0;
-    display: ;
-    justify-content: ;
     padding-bottom: 5px;
     padding-top: 0;
     margin-bottom: 10px;
@@ -536,6 +554,16 @@ body {
     object-fit: cover;
     border-radius: 5px;
     margin-top: 10px;
+}
+
+.inline-checkboxes label {
+    display: inline;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.inline-checkboxes input {
+    width: auto;
+    display: inline-block;
 }
 
 /*=========================================
@@ -631,7 +659,18 @@ textarea {
 /*=========================================
 		BUTTONS
 =========================================*/
-.ClearBtn, /* -- ADDED -- */ button {
+button {
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+	font-size: 1rem;
+	margin-top: 10px;
+}
+
+
+
+.ClearBtn {
     background-color: white;
     color: black;
     padding: 12px 20px;
@@ -678,8 +717,6 @@ textarea {
 
 .GetUpdates h2, .ContactContainer h2 {
     margin: 0;
-    display: ;
-    justify-content: ;
     padding-bottom: 5px;
     padding-top: 0;
     margin-bottom: 10px;
@@ -691,8 +728,6 @@ textarea {
 
 .form-group label {
     margin: 0;
-    display: ;
-    justify-content: ;
     padding-bottom: 20px;
     padding-top: 10px;
     margin-bottom: 20px;
@@ -701,7 +736,7 @@ textarea {
     color: white;
     text-align: left;
 }
-.AnimatedHeader lable {
+.AnimatedHeader label {
     text-align: center;
 }
 
@@ -730,12 +765,30 @@ textarea {
 	.main-menu-flex {
         flex-direction: column;
 	}
+
+    .businessInfo-container {
+        grid-template-columns: 1fr;
+    }
+
+    .b0-business {
+        flex-direction: column;
+    }
 		    
 	.mainNav {
 	    flex-direction: column;
     }
-		    
+	
+    .drinkSizes {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 	.topCol2 {
 	    grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
     }
 }
